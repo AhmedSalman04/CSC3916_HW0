@@ -1,0 +1,67 @@
+
+*  Name      :  Ahmed Salman        
+*  GitHub ID:  AhmedSalman04
+*  Class     :  CSCI-3916  
+
+
+Request Headers:
+
+User-Agent: PostmanRuntime/7.29.0
+	user-Agent is a string (signture of your browser) that lets servers and other networks 
+	identify the other end of communication.
+
+Accept: */*
+	any data is accepted.
+
+Cache-Control: no-cache
+	means revalidating the cached resources with the server before using them.
+
+Postman-Token: 9081e64d-aec3-470d-96ae-54c82db1d45c
+	Is an authentication text string. unique to the server that being used.
+ 
+Host: www.googleapis.com
+	specifies the server to which the request is being sent.
+
+Accept-Encoding: gzip, deflate, br
+	determines how the content will be encoded in a way which the client can understand.
+	
+Connection: keep-alive
+	presistent connection type that allows TCP connection to remain open. 
+
+
+Response Headers:
+
+Vary: Origin
+	describes the parts of the request message.In this case, it indicates that the response is dependent on the origin (not cached).
+
+Vary: X-Origin
+	describes the parts of the request message. X- indicates that the value is 	experimental or an extension of the standard.
+
+Vary: Referer
+	describes the parts of the request message. it allows the server to identify
+	the page where the clients are using it from.
+Content-Type: application/json; charset=UTF-8
+	Indicates the format of the response body.
+Content-Encoding: gzip
+	determines how the content will be encoded in a way which the client can understand.
+
+Date: Fri, 28 Jan 2022 00:51:02 GMT
+	Indicates the date of which the response was received.
+
+Server: ESF
+	Indicates the server ID.
+Cache-Control: private
+	specifies user specific resourse which can be cached only on user device.
+X-XSS-Protection: 0
+	A feature used by broswers to prevent pages from loading when reflected cross-	site scripting attacks is detected.
+
+X-Frame-Options: SAMEORIGIN
+	Indicates that the page can't be embedded except with a page that has the same origin.
+
+X-Content-Type-Options: nosniff
+	Indicates mime based attacks.
+
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+	Indicates that alternative resource (service) form different server should be loaded.
+Transfer-Encoding: chunked
+	Indecates the encoding way used to transfer the payload to the client on the other side safely.
